@@ -12,10 +12,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
-from django.core.wsgi import get_wsgi_application
-from django.contrib.staticfiles.handlers import StaticFilesHandler
-application = StaticFilesHandler(get_wsgi_application())
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -29,7 +25,7 @@ SECRET_KEY = '@7e#x@g@#bwy!)v5_hlz^&=8r(x^1#7n*2k&8#tpc%y^&9vz7x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['135.74.146.49']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
