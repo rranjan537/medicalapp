@@ -6,4 +6,5 @@ def ConvertXMLtoJSON(self, request, format=None):
     data = (xmltodict.parse(recievedData))
     print (json.dumps(data))
     sendData = (json.dumps(data))
+    
     return (sendData)
